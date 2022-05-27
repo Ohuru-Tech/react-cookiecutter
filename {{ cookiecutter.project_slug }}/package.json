@@ -1,5 +1,5 @@
 {
-  "name": "create-react-app-with-typescript",
+  "name": "{{ cookiecutter.project_slug }}",
   "version": "5.0.0",
   "private": true,
   "dependencies": {

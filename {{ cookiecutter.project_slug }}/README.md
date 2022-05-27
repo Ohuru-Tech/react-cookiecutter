@@ -74,3 +74,6 @@ You can easily add more items there by including them in `src/apps/layouts/dashb
     icon: getIcon(someIcon),
 },
 ```
+
+### Validations
+A couple validations have been built and included for you with a function that lets you pass in the form field name and then validate it easily, we will be adding `react-hook-form` in the future, so you can use it to validate the form fields.
