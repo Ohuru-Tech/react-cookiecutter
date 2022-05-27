@@ -25,7 +25,7 @@ Step into directory you want to create project and generate project with cookiec
 
 ```bash
 cd /path/to/directory
-cookiecutter https://github.com/Ohuru-Tech/drf-cookiecutter
+cookiecutter https://github.com/Ohuru-Tech/react-cookiecutter
 ```
 
 Answer the questions in wizard.
