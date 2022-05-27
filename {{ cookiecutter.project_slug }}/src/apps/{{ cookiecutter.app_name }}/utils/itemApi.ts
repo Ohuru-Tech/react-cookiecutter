@@ -1,7 +1,10 @@
 import axios from "apps/common/utils/axios/defaults";
 import { snakeAndCamelCase } from "apps/common/utils/axios/configs";
-import { ItemCreate, ItemEdit } from "apps/items/models/api";
-import { Item } from "apps/items/models/item";
+import {
+  ItemCreate,
+  ItemEdit,
+} from "apps/{{ cookiecutter.app_name }}/models/api";
+import { Item } from "apps/{{ cookiecutter.app_name }}/models/item";
 
 // ToDo add mocks for tests here later
 
