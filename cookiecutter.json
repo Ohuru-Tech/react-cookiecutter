@@ -1,0 +1,6 @@
+{
+    "app_name": "task",
+    "project_name": "My Frontend Project",
+    "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+    "_copy_without_render": ["*.html"]
+}
