@@ -12,15 +12,15 @@ interface ItemListItemProps {
 export default function ApplicationListItem({ item }: ItemListItemProps) {
   const navigate = useNavigate();
   return (
-    <Card sx={{ "{{" {{ "}}" }} p: 1, mb: 2, mt: 2 {{ "}}" }}>
+    <Card sx={{ "{{" }} {{ "}}" }} p: 1, mb: 2, mt: 2 {{ "}}" }}>
       <CardActionArea
         onClick={() => {
           navigate(`/items/${item?.id}`);
         {{ "}}" }}
       >
-        <CardHeader title={item?.name} sx={{ "{{" {{ "}}" }} color: "#46C084" {{ "}}" }} />
+        <CardHeader title={item?.name} sx={{ "{{" }} {{ "}}" }} color: "#46C084" {{ "}}" }} />
       </CardActionArea>
-      <Box sx={{ "{{" {{ "}}" }} p: 3, pb: 2 {{ "}}" }} dir="ltr">
+      <Box sx={{ "{{" }} {{ "}}" }} p: 3, pb: 2 {{ "}}" }} dir="ltr">
         <Stack spacing={3}>{item.description}</Stack>
       </Box>
     </Card>

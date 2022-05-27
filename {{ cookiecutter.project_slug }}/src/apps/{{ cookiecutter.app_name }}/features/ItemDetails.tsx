@@ -112,13 +112,13 @@ export function ItemDetails() {
       <Container maxWidth="xl">
         <Grid container spacing={3} justifyContent="center">
           <Grid item xs={12} sm={10} md={10}>
-            <Box sx={{ "{{" {{ "}}" }} pt: 2 {{ "}}" }}>
+            <Box sx={{ "{{" }} {{ "}}" }} pt: 2 {{ "}}" }}>
               <Button variant="text" component={RouterLink} to="/items/all">
                 <Icon icon={arrowFill} color="#46C084" height={30} />
                 Back to items
               </Button>
             </Box>
-            <Box sx={{ "{{" {{ "}}" }} pt: 2, pl: 1 {{ "}}" }}>
+            <Box sx={{ "{{" }} {{ "}}" }} pt: 2, pl: 1 {{ "}}" }}>
               <Typography variant="h4">
                 {loading ? <Skeleton height={60} /> : "Item Details"}
               </Typography>
@@ -133,7 +133,7 @@ export function ItemDetails() {
                   {editing ? (
                     <>
                       <TextField
-                        sx={{ "{{" {{ "}}" }} p: 1, m: 1 {{ "}}" }}
+                        sx={{ "{{" }} {{ "}}" }} p: 1, m: 1 {{ "}}" }}
                         id={`item-${selectedItem.id}-name`}
                         label="Item Name"
                         value={itemName}
@@ -142,7 +142,7 @@ export function ItemDetails() {
                         onChange={(e) => setItemName(e.target.value)}
                       />
                       <TextField
-                        sx={{ "{{" {{ "}}" }} p: 1, m: 1 {{ "}}" }}
+                        sx={{ "{{" }} {{ "}}" }} p: 1, m: 1 {{ "}}" }}
                         id={`item-${selectedItem.id}-description`}
                         label="Item Description"
                         value={itemDescription}
@@ -153,7 +153,7 @@ export function ItemDetails() {
                         onChange={(e) => setItemDescription(e.target.value)}
                       />
                       <Button
-                        sx={{ "{{" {{ "}}" }} p: 1, m: 1, ml: 2 {{ "}}" }}
+                        sx={{ "{{" }} {{ "}}" }} p: 1, m: 1, ml: 2 {{ "}}" }}
                         variant="contained"
                         onClick={async () => {
                           setUpdating(true);
@@ -171,7 +171,7 @@ export function ItemDetails() {
                   ) : (
                     <>
                       <Box
-                        sx={{ "{{" {{ "}}" }}
+                        sx={{ "{{" }} {{ "}}" }}
                           display: "flex",
                           justifyContent: "space-between",
                           p: 1,
@@ -196,7 +196,7 @@ export function ItemDetails() {
                           </IconButton>
                         </Box>
                       </Box>
-                      <Typography variant="body1" sx={{ "{{" {{ "}}" }} p: 1, m: 1 {{ "}}" }}>
+                      <Typography variant="body1" sx={{ "{{" }} {{ "}}" }} p: 1, m: 1 {{ "}}" }}>
                         {selectedItem.description}
                       </Typography>
                     </>

@@ -73,11 +73,11 @@ export default function Searchbar() {
                   <Box
                     component={Icon}
                     icon={searchFill}
-                    sx={{ "{{" {{ "}}" }} color: "text.disabled", width: 20, height: 20 {{ "}}" }}
+                    sx={{ "{{" }} {{ "}}" }} color: "text.disabled", width: 20, height: 20 {{ "}}" }}
                   />
                 </InputAdornment>
               }
-              sx={{ "{{" {{ "}}" }} mr: 1, fontWeight: "fontWeightBold" {{ "}}" }}
+              sx={{ "{{" }} {{ "}}" }} mr: 1, fontWeight: "fontWeightBold" {{ "}}" }}
             />
             <Button variant="contained" onClick={handleClose}>
               Search

@@ -10,6 +10,6 @@ interface PropTypes {
 
 export default function Logo({ sx }: PropTypes) {
   return (
-    <Box component="img" src="logo.png" sx={{ "{{" {{ "}}" }} width: 60, height: 60, ...sx {{ "}}" }} />
+    <Box component="img" src="logo.png" sx={{ "{{" }} {{ "}}" }} width: 60, height: 60, ...sx {{ "}}" }} />
   );
 }
