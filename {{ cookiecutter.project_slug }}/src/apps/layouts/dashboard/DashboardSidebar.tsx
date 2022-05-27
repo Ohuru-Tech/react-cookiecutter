@@ -6,11 +6,9 @@ import { styled } from "@mui/material/styles";
 import {
   Box,
   Link,
-  Button,
   Drawer,
   Typography,
   Avatar,
-  Stack,
 } from "@mui/material";
 // components
 import Logo from "../../common/components/Logo";
@@ -71,7 +69,7 @@ export default function DashboardSidebar({
       {{ "}}" }}
     >
       <Box sx={{ "{{" }} px: 2.5, py: 3 {{ "}}" }}>
-        <Box component={RouterLink} to="/" sx={{ "{{" }} {{ "}}" }} display: "inline-flex" {{ "}}" }}>
+        <Box component={RouterLink} to="/" sx={{ "{{" }} display: "inline-flex" {{ "}}" }}>
           <Logo />
         </Box>
       </Box>
@@ -81,11 +79,11 @@ export default function DashboardSidebar({
           <AccountStyle>
             <Avatar
               src="https://www.w3schools.com/howto/img_avatar.png"
-              sx={{ "{{" }} {{ "}}" }} height: 56, width: 56 {{ "}}" }}
+              sx={{ "{{" }} height: 56, width: 56 {{ "}}" }}
               alt="photoURL"
             />
             <Box sx={{ "{{" }} ml: 2 {{ "}}" }}>
-              <Typography variant="subtitle2" sx={{ "{{" }} {{ "}}" }} color: "text.primary" {{ "}}" }}>
+              <Typography variant="subtitle2" sx={{ "{{" }} color: "text.primary" {{ "}}" }}>
                 John Doe
               </Typography>
             </Box>

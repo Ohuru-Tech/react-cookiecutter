@@ -18,9 +18,9 @@ export default function ApplicationListItem({ item }: ItemListItemProps) {
           navigate(`/items/${item?.id}`);
         {{ "}}" }}
       >
-        <CardHeader title={item?.name} sx={{ "{{" }} {{ "}}" }} color: "#46C084" {{ "}}" }} />
+        <CardHeader title={item?.name} sx={{ "{{" }} color: "#46C084" {{ "}}" }} />
       </CardActionArea>
-      <Box sx={{ "{{" }} {{ "}}" }} p: 3, pb: 2 {{ "}}" }} dir="ltr">
+      <Box sx={{ "{{" }} p: 3, pb: 2 {{ "}}" }} dir="ltr">
         <Stack spacing={3}>{item.description}</Stack>
       </Box>
     </Card>

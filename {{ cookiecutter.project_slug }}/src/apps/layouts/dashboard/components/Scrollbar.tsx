@@ -48,7 +48,7 @@ export default function Scrollbar({ children, sx, ...other }: PropTypes) {
 
   if (isMobile) {
     return (
-      <Box sx={{ "{{" }} {{ "}}" }} overflowX: "auto", ...sx {{ "}}" }} {...other}>
+      <Box sx={{ "{{" }} overflowX: "auto", ...sx {{ "}}" }} {...other}>
         {children}
       </Box>
     );

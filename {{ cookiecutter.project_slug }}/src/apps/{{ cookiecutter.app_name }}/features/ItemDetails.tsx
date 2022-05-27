@@ -4,7 +4,6 @@ import {
   Button,
   Card,
   CardContent,
-  CircularProgress,
   Grid,
   IconButton,
   Skeleton,
@@ -196,7 +195,7 @@ export function ItemDetails() {
                           </IconButton>
                         </Box>
                       </Box>
-                      <Typography variant="body1" sx={{ "{{" }} {{ "}}" }} p: 1, m: 1 {{ "}}" }}>
+                      <Typography variant="body1" sx={{ "{{" }} p: 1, m: 1 {{ "}}" }}>
                         {selectedItem.description}
                       </Typography>
                     </>
