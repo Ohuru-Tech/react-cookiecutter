@@ -61,7 +61,7 @@ export default function DashboardSidebar({
 
   const renderContent = (
     <Scrollbar
-      sx={{ "{{" }} {{ "}}" }}
+      sx={{ "{{" }}
         height: "100%",
         "& .simplebar-content": {
           height: "100%",
@@ -70,13 +70,13 @@ export default function DashboardSidebar({
         },
       {{ "}}" }}
     >
-      <Box sx={{ "{{" }} {{ "}}" }} px: 2.5, py: 3 {{ "}}" }}>
+      <Box sx={{ "{{" }} px: 2.5, py: 3 {{ "}}" }}>
         <Box component={RouterLink} to="/" sx={{ "{{" }} {{ "}}" }} display: "inline-flex" {{ "}}" }}>
           <Logo />
         </Box>
       </Box>
 
-      <Box sx={{ "{{" }} {{ "}}" }} mb: 5, mx: 2.5 {{ "}}" }}>
+      <Box sx={{ "{{" }} mb: 5, mx: 2.5 {{ "}}" }}>
         <Link underline="none" component={RouterLink} to="#">
           <AccountStyle>
             <Avatar
@@ -84,7 +84,7 @@ export default function DashboardSidebar({
               sx={{ "{{" }} {{ "}}" }} height: 56, width: 56 {{ "}}" }}
               alt="photoURL"
             />
-            <Box sx={{ "{{" }} {{ "}}" }} ml: 2 {{ "}}" }}>
+            <Box sx={{ "{{" }} ml: 2 {{ "}}" }}>
               <Typography variant="subtitle2" sx={{ "{{" }} {{ "}}" }} color: "text.primary" {{ "}}" }}>
                 John Doe
               </Typography>
@@ -95,7 +95,7 @@ export default function DashboardSidebar({
 
       <NavSection navConfig={sidebarConfig} />
 
-      <Box sx={{ "{{" }} {{ "}}" }} flexGrow: 1 {{ "}}" }} />
+      <Box sx={{ "{{" }} flexGrow: 1 {{ "}}" }} />
     </Scrollbar>
   );
 
@@ -105,7 +105,7 @@ export default function DashboardSidebar({
         <Drawer
           open={isOpenSidebar}
           onClose={onCloseSidebar}
-          PaperProps={{ "{{" }} {{ "}}" }}
+          PaperProps={{ "{{" }}
             sx: { width: DRAWER_WIDTH },
           {{ "}}" }}
         >
@@ -117,7 +117,7 @@ export default function DashboardSidebar({
         <Drawer
           open
           variant="persistent"
-          PaperProps={{ "{{" }} {{ "}}" }}
+          PaperProps={{ "{{" }}
             sx: {
               width: DRAWER_WIDTH,
               bgcolor: "background.default",

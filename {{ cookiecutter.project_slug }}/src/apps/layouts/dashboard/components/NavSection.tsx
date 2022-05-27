@@ -93,7 +93,7 @@ function NavItem({ item, active }: NavItemProps) {
       <>
         <ListItemStyle
           onClick={handleOpen}
-          sx={{ "{{" }} {{ "}}" }}
+          sx={{ "{{" }}
             ...(isActiveRoot && activeRootStyle),
           {{ "}}" }}
         >
@@ -118,14 +118,14 @@ function NavItem({ item, active }: NavItemProps) {
                   key={title}
                   component={RouterLink}
                   to={path}
-                  sx={{ "{{" }} {{ "}}" }}
+                  sx={{ "{{" }}
                     ...(isActiveSub && activeSubStyle),
                   {{ "}}" }}
                 >
                   <ListItemIconStyle>
                     <Box
                       component="span"
-                      sx={{ "{{" }} {{ "}}" }}
+                      sx={{ "{{" }}
                         width: 4,
                         height: 4,
                         display: "flex",
@@ -156,7 +156,7 @@ function NavItem({ item, active }: NavItemProps) {
     <ListItemStyle
       component={RouterLink}
       to={path}
-      sx={{ "{{" }} {{ "}}" }}
+      sx={{ "{{" }}
         ...(isActiveRoot && activeRootStyle),
       {{ "}}" }}
     >

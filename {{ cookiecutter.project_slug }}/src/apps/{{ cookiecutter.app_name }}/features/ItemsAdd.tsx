@@ -4,9 +4,7 @@ import {
   Button,
   Card,
   CardContent,
-  CircularProgress,
   Grid,
-  IconButton,
   Skeleton,
   TextField,
   Typography,
@@ -34,13 +32,13 @@ export function ItemsAdd() {
       <Container maxWidth="xl">
         <Grid container spacing={3} justifyContent="center">
           <Grid item xs={12} sm={10} md={10}>
-            <Box sx={{ "{{" }} {{ "}}" }} pt: 2 {{ "}}" }}>
+            <Box sx={{ "{{" }} pt: 2 {{ "}}" }}>
               <Button variant="text" component={RouterLink} to="/items/all">
                 <Icon icon={arrowFill} color="#46C084" height={30} />
                 Back to items
               </Button>
             </Box>
-            <Box sx={{ "{{" }} {{ "}}" }} pt: 2, pl: 1 {{ "}}" }}>
+            <Box sx={{ "{{" }} pt: 2, pl: 1 {{ "}}" }}>
               <Typography variant="h4">Add an Item</Typography>
             </Box>
           </Grid>
@@ -51,7 +49,7 @@ export function ItemsAdd() {
               <Card>
                 <CardContent>
                   <TextField
-                    sx={{ "{{" }} {{ "}}" }} p: 1, m: 1 {{ "}}" }}
+                    sx={{ "{{" }} p: 1, m: 1 {{ "}}" }}
                     id="item-name"
                     label="Item Name"
                     value={itemName}
@@ -60,7 +58,7 @@ export function ItemsAdd() {
                     onChange={(e) => setItemName(e.target.value)}
                   />
                   <TextField
-                    sx={{ "{{" }} {{ "}}" }} p: 1, m: 1 {{ "}}" }}
+                    sx={{ "{{" }} p: 1, m: 1 {{ "}}" }}
                     id="item-description"
                     label="Item Description"
                     value={itemDescription}
@@ -71,7 +69,7 @@ export function ItemsAdd() {
                     onChange={(e) => setItemDescription(e.target.value)}
                   />
                   <Button
-                    sx={{ "{{" }} {{ "}}" }} p: 1, m: 1, ml: 2 {{ "}}" }}
+                    sx={{ "{{" }} p: 1, m: 1, ml: 2 {{ "}}" }}
                     variant="contained"
                     onClick={async () => {
                       setLoading(true);

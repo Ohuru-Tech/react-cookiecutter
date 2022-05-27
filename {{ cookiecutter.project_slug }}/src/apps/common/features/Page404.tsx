@@ -23,11 +23,11 @@ export default function Page404() {
   return (
     <RootStyle title="404 Page Not Found | Oblogs">
       <Container>
-        <Box sx={{ "{{" }} {{ "}}" }} maxWidth: 480, margin: "auto", textAlign: "center" {{ "}}" }}>
+        <Box sx={{ "{{" }} maxWidth: 480, margin: "auto", textAlign: "center" {{ "}}" }}>
           <Typography variant="h3" paragraph>
             Sorry, page not found!
           </Typography>
-          <Typography sx={{ "{{" }} {{ "}}" }} color: "text.secondary" {{ "}}" }}>
+          <Typography sx={{ "{{" }} color: "text.secondary" {{ "}}" }}>
             Sorry, we couldn’t find the page you’re looking for. Perhaps you’ve
             mistyped the URL? Be sure to check your spelling.
           </Typography>
@@ -35,7 +35,7 @@ export default function Page404() {
           <Box
             component="img"
             src="404.jpg"
-            sx={{ "{{" }} {{ "}}" }} height: 260, mx: "auto", my: { xs: 5, sm: 10 } {{ "}}" }}
+            sx={{ "{{" }} height: 260, mx: "auto", my: { xs: 5, sm: 10 } {{ "}}" }}
           />
 
           <Button

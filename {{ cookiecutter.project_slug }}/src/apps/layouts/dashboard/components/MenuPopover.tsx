@@ -42,12 +42,12 @@ export default function MenuPopover({
 }: PropTypes) {
   return (
     <Popover
-      anchorOrigin={{ "{{" }} {{ "}}" }} vertical: "bottom", horizontal: "right" {{ "}}" }}
-      transformOrigin={{ "{{" }} {{ "}}" }} vertical: "top", horizontal: "right" {{ "}}" }}
+      anchorOrigin={{ "{{" }} vertical: "bottom", horizontal: "right" {{ "}}" }}
+      transformOrigin={{ "{{" }} vertical: "top", horizontal: "right" {{ "}}" }}
       open={open}
       anchorEl={anchorEl}
       onClose={onClose}
-      PaperProps={{ "{{" }} {{ "}}" }}
+      PaperProps={{ "{{" }}
         sx: {
           mt: 1.5,
           ml: 0.5,

@@ -47,19 +47,19 @@ export default function DashboardNavbar({ onOpenSidebar }: PropTypes) {
         <MHidden width="lgUp">
           <IconButton
             onClick={onOpenSidebar}
-            sx={{ "{{" }} {{ "}}" }} mr: 1, color: "text.primary" {{ "}}" }}
+            sx={{ "{{" }} mr: 1, color: "text.primary" {{ "}}" }}
           >
             <Icon icon={menu2Fill} />
           </IconButton>
         </MHidden>
 
         <Searchbar />
-        <Box sx={{ "{{" }} {{ "}}" }} flexGrow: 1 {{ "}}" }} />
+        <Box sx={{ "{{" }} flexGrow: 1 {{ "}}" }} />
 
         <Stack
           direction="row"
           alignItems="center"
-          spacing={{ "{{" }} {{ "}}" }} xs: 0.5, sm: 1.5 {{ "}}" }}
+          spacing={{ "{{" }} xs: 0.5, sm: 1.5 {{ "}}" }}
         >
           <AccountPopover />
         </Stack>

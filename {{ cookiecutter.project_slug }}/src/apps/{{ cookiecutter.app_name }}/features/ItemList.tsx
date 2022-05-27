@@ -37,7 +37,7 @@ export function ItemsList() {
         <Grid container spacing={3} justifyContent="center">
           <Grid item xs={12} sm={10} md={10}>
             <Box
-              sx={{ "{{" }} {{ "}}" }}
+              sx={{ "{{" }}
                 display: "flex",
                 justifyContent: "space-between",
                 p: 1,

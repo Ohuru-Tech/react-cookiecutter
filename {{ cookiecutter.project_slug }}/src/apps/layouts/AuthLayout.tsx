@@ -42,7 +42,7 @@ export default function AuthLayout({ children }: PropTypes) {
       <MHidden width="smDown">
         <Typography
           variant="body2"
-          sx={{ "{{" }} }} {{ "}}" }}
+          sx={{ "{{" }} }}
             mt: { md: -2 },
           {{ "}}" }}
         >
