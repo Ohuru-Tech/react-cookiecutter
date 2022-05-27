@@ -12,7 +12,7 @@ interface ItemListItemProps {
 export default function ApplicationListItem({ item }: ItemListItemProps) {
   const navigate = useNavigate();
   return (
-    <Card>
+    <Card sx={{ p: 1, mb: 2, mt: 2 }}>
       <CardActionArea
         onClick={() => {
           navigate(`/items/${item?.id}`);

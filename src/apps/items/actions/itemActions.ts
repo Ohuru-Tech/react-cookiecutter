@@ -1,8 +1,10 @@
 import { Action } from "react-sweet-state";
+import { toast } from "react-toastify";
 //
 import ItemAPIs from "apps/items/utils/itemApi";
 import { itemState } from "../models/state";
-import { ItemEdit } from "../models/api";
+import { ItemCreate, ItemEdit } from "../models/api";
+import { successToastConfig } from "apps/common/utils/general/configs";
 
 // -----------------------------------------------------------------
 
@@ -35,20 +37,33 @@ export const fetchItem =
     }
   };
 
+export const addItem =
+  (item: ItemCreate): Action<itemState> =>
+  async ({ dispatch }) => {
+    const response = await ItemAPIs().addItem(item);
+    if (response.status == 201) {
+      toast("Item added successfully", successToastConfig);
+    }
+    await dispatch(fetchAllItems());
+  };
+
 export const updateItem =
   (updates: ItemEdit): Action<itemState> =>
   async ({ getState, dispatch }) => {
     const { selectedItemId } = getState();
     await ItemAPIs(selectedItemId).editItem(updates);
-    dispatch(fetchItem);
-    dispatch(fetchAllItems);
+    await dispatch(fetchItem());
+    await dispatch(fetchAllItems());
   };
 
 export const deleteItem =
   (): Action<itemState> =>
-  async ({ getState, dispatch }) => {
+  async ({ getState, dispatch, setState }) => {
     const { selectedItemId } = getState();
-    await ItemAPIs(selectedItemId).deleteItem();
-    dispatch(fetchItem);
-    dispatch(fetchAllItems);
+    const response = await ItemAPIs(selectedItemId).deleteItem();
+    if (response.status === 204) {
+      toast("Item deleted successfully", successToastConfig);
+    }
+    await dispatch(fetchAllItems());
+    setState({ selectedItemId: 0 });
   };

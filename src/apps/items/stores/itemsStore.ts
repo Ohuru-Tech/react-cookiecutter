@@ -7,6 +7,7 @@ import {
   fetchItem,
   updateItem,
   deleteItem,
+  addItem,
 } from "apps/items/actions/itemActions";
 
 defaults.devtools = true;
@@ -28,6 +29,7 @@ const Store = createStore({
     fetchItem,
     updateItem,
     deleteItem,
+    addItem,
   },
 });
 

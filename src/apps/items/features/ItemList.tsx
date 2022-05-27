@@ -1,6 +1,18 @@
 import React, { useState, useEffect } from "react";
-
-import { Box, Container, Grid, Skeleton, Typography } from "@mui/material";
+import { useNavigate } from "react-router-dom";
+//
+import {
+  Box,
+  Container,
+  Grid,
+  IconButton,
+  Skeleton,
+  Typography,
+} from "@mui/material";
+//
+import { Icon } from "@iconify/react";
+import addIcon from "@iconify/icons-eva/plus-fill";
+//
 import Page from "apps/common/components/Page";
 import ItemListItem from "apps/items/components/ItemListItem";
 import useItemStore from "apps/items/stores/itemsStore";
@@ -8,6 +20,7 @@ import useItemStore from "apps/items/stores/itemsStore";
 export function ItemsList() {
   const [{ items }, { fetchAllItems }] = useItemStore();
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setLoading(true);
@@ -23,10 +36,26 @@ export function ItemsList() {
       <Container maxWidth="xl">
         <Grid container spacing={3} justifyContent="center">
           <Grid item xs={12} sm={10} md={10}>
-            <Box sx={{ pt: 2, pl: 1, flexGrow: 1 }}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                p: 1,
+                m: 1,
+                bgcolor: "background.paper",
+                borderRadius: 1,
+              }}
+            >
               <Typography variant="h4">
                 {loading ? <Skeleton height={60} /> : "Items"}
               </Typography>
+              <IconButton
+                onClick={() => {
+                  navigate("/items/add");
+                }}
+              >
+                <Icon icon={addIcon} color="#46C084" height={30} />
+              </IconButton>
             </Box>
           </Grid>
           {loading ? (
@@ -34,7 +63,10 @@ export function ItemsList() {
               <Skeleton variant="rectangular" height={80} width={80} />
             </Grid>
           ) : (
-            <Grid item xs={12} sm={10} md={10}>
+            <Grid item xs={12} sm={10} md={10} spacing={2}>
+              {items.length === 0 && (
+                <Typography variant="h2">All empty here</Typography>
+              )}
               {items.map((item) => (
                 <ItemListItem key={item.id} item={item} />
               ))}

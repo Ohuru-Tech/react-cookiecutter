@@ -9,7 +9,7 @@ const ITEMS_API_BASE = "/items";
 
 const ItemsAPIs = (itemId?: number) => {
   return {
-    addItem: (item: ItemCreate[]) =>
+    addItem: (item: ItemCreate) =>
       axios.post(`${ITEMS_API_BASE}/`, item, snakeAndCamelCase),
     getAllItems: () =>
       axios.get<Item[]>(`${ITEMS_API_BASE}/`, snakeAndCamelCase),
